@@ -3,10 +3,16 @@
     <head>
     	<meta charset="utf-8"/>
     	<link rel="stylesheet"  href="style.css">
-
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <!-- Agrega el manejo de autenticación. -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js">
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+        <script src="Js/init.js"></script>
     	<title>Agregar Materias</title>
     </head>
     <body>
+        <form name = "forma" >
         <div id="main_wrapper">
             <header>
                 <div id="main_title">
@@ -20,12 +26,17 @@
                 </nav>
                     <h1>Añadir Secuencias</h1>
                  </div>
+                <div class="herramientas" 
+                     <a href="index.html">Cancelar</a>
+                    <button type ="submit">Guardar</button>
+            </div>
                 </header>
             
             
             
             <section>
                 <article>
+    
                    <p><h3>Materia <input type="section" name="nombreM"></h3></p>
                    <p><h3>Secuencia <input type="section" name="nombreS"></h3></p>
                     <p><h3>Profesor <input type="section" name="nombreP"></h3></p>
@@ -40,7 +51,7 @@
             
             
         </div>
-    </body>
+</form>
     	
     
     </body>
