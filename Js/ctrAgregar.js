@@ -6,7 +6,7 @@ getAuth,getFirestore
  const daoSecuencia = getFirestore().collection("Secuencia");
       const forma=  document["forma"];
 
-async function guarda(evt){
+async function guardar(evt){
 	try {
 const formData = new FormData(forma);
   const nombre = getString(formData,"nombre").trim();
