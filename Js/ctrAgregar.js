@@ -17,8 +17,11 @@ const formData = new FormData(forma);
 
   const modelo = {nombre,secuencia,profesor,salon,plataforma};
 
-  await daoSecuencia.add(modelo);
+  const refNuevoDoc = await daoSecuencia.add(modelo);
  
+	
+console.log(refNuevoDoc.id);	
+		
 
 }catch (e){
 	muestraError(e);
