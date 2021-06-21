@@ -3,6 +3,12 @@
     <head>
     	<meta charset="utf-8"/>
     	<link rel="stylesheet"  href="style.css">
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <!-- Agrega el manejo de autenticación. -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js">
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+        <script src="Js/init.js"></script>
 
     	<title>Mis Secuencias</title>
     </head>
@@ -22,19 +28,13 @@
                 </nav>
                     <h1>Mis Secuencias</h1>
                  </div>
+                <div class="herramientas">
+                    <a href="agregar.html">
+                        Agregar....</a>
+                </div>
                 </header>
+            <script type="module" src ="Js/ctrMostar.js">
             
-            
-            
-            <section>
-                <fieldset>
-                <legend>Secuencias</legend>
-                <output id="email"><progress max="100">Cargando…</progress></output>
-                </fieldset>
-               
-                
-                
-            </section>
             
             
         </div>
