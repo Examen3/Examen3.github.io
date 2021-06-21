@@ -1,6 +1,6 @@
 import {
 getAuth,getFirestore
-}from "..fabrica.js";
+}from "fabrica.js";
 
 
  const daoSecuencia = getFirestore().collection("Secuencia");
